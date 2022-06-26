@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.8867924, g: 0.8454813, b: 0.48020646, a: 1}
+  m_SubtractiveShadowColor: {r: 0.9339623, g: 0.800766, b: 0.13568883, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 92af75336a259ba4284a5001d1ae62f8, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 998834202}
-  m_IndirectSpecularColor: {r: 0.52883327, g: 0.4422648, b: 0.38899264, a: 1}
+  m_IndirectSpecularColor: {r: 0.52791005, g: 0.44156402, b: 0.38851175, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,6 +200,54 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 419d7ec44a6ba2d41b394b2deba87f8f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02baaf1bd178fdb4d841e92a9f71d6e5, type: 3}
+--- !u!1 &38000416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38000418}
+  - component: {fileID: 38000417}
+  m_Layer: 0
+  m_Name: SkyFake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &38000417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38000416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f53307c02a43564f8d4dcdf3fa7d4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxSpeed: 1
+  timeMultiplier: 1
+  sun: {fileID: 998834201}
+  sunLight: {fileID: 0}
+--- !u!4 &38000418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38000416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &221561660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -818,7 +866,7 @@ GameObject:
   - component: {fileID: 998834203}
   - component: {fileID: 998834202}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Sun Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -833,10 +881,10 @@ Light:
   m_GameObject: {fileID: 998834201}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 0
+  m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9811321, g: 0.827451, b: 0.15179773, a: 1}
-  m_Intensity: 10
+  m_Color: {r: 0.98039216, g: 0.79954326, b: 0.1529412, a: 1}
+  m_Intensity: 1
   m_Range: 13
   m_SpotAngle: 96
   m_InnerSpotAngle: 21.80208
@@ -894,7 +942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998834201}
   m_LocalRotation: {x: 0.6524937, y: 0.64030564, z: 0.26193318, w: 0.3092761}
-  m_LocalPosition: {x: -9.04, y: 3.54, z: 7.09}
+  m_LocalPosition: {x: -9.268, y: 4.053, z: 7.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
